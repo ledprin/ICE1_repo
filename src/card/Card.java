@@ -46,7 +46,15 @@ public class Card {
     public void setValue(int value) {
         this.value = value;
     }
+    
+    public Card(){
+        
+    }
    
+    public Card (String s, int v){
+        this.suit = s;
+        this.value = v;
+    }
    
     
 }
