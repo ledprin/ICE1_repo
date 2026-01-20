@@ -21,7 +21,7 @@ public class CardTrick {
     public static void main(String[] args)
     {
         Random rnd = new Random();
-        Scanner inpt = new Scanner(System.in);
+        //Scanner inpt = new Scanner(System.in);
         
         Card[] magicHand = new Card[7];
         
