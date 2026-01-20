@@ -28,8 +28,7 @@ public class CardTrick {
         for (int i=0; i<magicHand.length; i++)
         {
             Card c = new Card(Card.SUITS[rnd.nextInt(3)],rnd.nextInt(13)+1);
-            magicHand[i] = c;
-
+            magicHand[i] = c;    
             //c.setValue(insert call to random number generator here)
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
         }
@@ -84,6 +83,7 @@ public class CardTrick {
         if (!lucky){
             System.out.println("Bummer, no lucky card.");
         }
+        
         
     }
     
