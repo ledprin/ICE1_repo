@@ -4,6 +4,8 @@
  */
 package card;
 
+import java.util.Objects;
+
 /**
  * A class that models playing card Objects. Cards have 
  * a value (note that Ace = 1, Jack -11, Queen =12, King = 13)
@@ -56,5 +58,22 @@ public class Card {
         this.value = v;
     }
    
+    @Override
+    public boolean equals(Object o){
+        if(!(o instanceof Card)){
+            return false;
+        }
+        Card c = (Card) o;
+        
+        return this.suit.equals(c.suit) && this.value == c.value;
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 71 * hash + Objects.hashCode(this.suit);
+        hash = 71 * hash + this.value;
+        return hash;
+    }
     
 }
