@@ -43,7 +43,8 @@ public class CardTrick {
         int val = inpt.nextInt();
         System.out.println("Enter Suit(0-3 Hearts=0,Diamonds=1,Spades=2,Clubs=3): ");
         int sut = inpt.nextInt();
-        
+
+        /*
         boolean fnd = false;
         uCard.setValue(val);       
         uCard.setSuit(uCard.SUITS[sut]);
@@ -61,6 +62,8 @@ public class CardTrick {
         if(fnd == true){
             System.out.println("Your card is in the magic hand.");
         }
+        */ //Is it okay if I just comment it out? (I want to still see the code and use it for future reference)
+        
         //insert code to ask the user for Card value and suit, create their card
         // and search magicHand here
         //Then report the result here
