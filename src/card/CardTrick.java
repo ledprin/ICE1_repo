@@ -34,8 +34,8 @@ public class CardTrick {
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
         }
         
-        for(int i=0; i<magicHand.length; i++){
-            System.out.println(magicHand[i].getSuit()+" "+magicHand[i].getValue());
+        for(Card cd : magicHand){
+            System.out.println(cd.getSuit()+" "+cd.getValue());
         }
         
         /*
