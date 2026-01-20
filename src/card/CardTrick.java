@@ -37,6 +37,7 @@ public class CardTrick {
             System.out.println(magicHand[i].getSuit()+" "+magicHand[i].getValue());
         }
         
+        /*
         Card uCard = new Card();
                   
         System.out.println("Enter Card Value(1-13): ");
@@ -44,7 +45,7 @@ public class CardTrick {
         System.out.println("Enter Suit(0-3 Hearts=0,Diamonds=1,Spades=2,Clubs=3): ");
         int sut = inpt.nextInt();
 
-        /*
+        
         boolean fnd = false;
         uCard.setValue(val);       
         uCard.setSuit(uCard.SUITS[sut]);
