@@ -62,7 +62,20 @@ public class CardTrick {
         // and search magicHand here
         //Then report the result here
         // add one luckcard hard code 2,clubs
-        
+
+        //This is my Hard-coded lucky card from GitHub
+        boolean lucky = false;
+        Card luckyCard = new Card("Spades",1);
+        for(Card c : magicHand){
+            if(c.equas(luckyCard)){
+                System.out.println("LUCKY CARD FOUND!");
+                lucky = true;
+                break;
+            }
+        }
+        if (!lucky){
+            System.out.println("Bummer, not lucky card.");
+        }
         
     }
     
