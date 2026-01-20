@@ -41,7 +41,7 @@ public class CardTrick {
                   
         System.out.println("Enter Card Value(1-13): ");
         int val = inpt.nextInt();
-        System.out.println("Enter Suit(0-3 Hearts=0,Diamonds=1,Clubs=2,Spades=3): ");
+        System.out.println("Enter Suit(0-3 Hearts=0,Diamonds=1,Spades=2,Clubs=3): ");
         int sut = inpt.nextInt();
         
         boolean fnd = false;
@@ -57,6 +57,9 @@ public class CardTrick {
         }
         if (!fnd){
             System.out.println("Sorry, your card is not in the magic hand.");
+        }
+        if(fnd == true){
+            System.out.println("Your card is in the magic hand.");
         }
         //insert code to ask the user for Card value and suit, create their card
         // and search magicHand here
