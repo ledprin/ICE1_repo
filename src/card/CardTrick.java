@@ -74,7 +74,7 @@ public class CardTrick {
             }
         }
         if (!lucky){
-            System.out.println("Bummer, not lucky card.");
+            System.out.println("Bummer, no lucky card.");
         }
         
     }
