@@ -67,7 +67,7 @@ public class CardTrick {
         boolean lucky = false;
         Card luckyCard = new Card("Spades",1);
         for(Card c : magicHand){
-            if(c.equas(luckyCard)){
+            if(c.equals(luckyCard)){
                 System.out.println("LUCKY CARD FOUND!");
                 lucky = true;
                 break;
